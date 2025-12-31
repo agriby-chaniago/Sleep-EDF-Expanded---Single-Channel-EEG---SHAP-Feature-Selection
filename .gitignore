@@ -1,0 +1,24 @@
+# Abaikan folder dataset PhysioNet
+physionet.org/
+
+# Abaikan file dataset spesifik (opsional, jika ada file besar di luar folder)
+*.edf
+*.hea
+*.dat
+*.csv
+
+# Cache / temporary files Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
