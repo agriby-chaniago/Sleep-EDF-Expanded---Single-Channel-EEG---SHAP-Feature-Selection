@@ -1,5 +1,6 @@
 # Abaikan folder dataset PhysioNet
 physionet.org/
+sleep-edfx/
 
 # Abaikan file dataset spesifik (opsional, jika ada file besar di luar folder)
 *.edf
