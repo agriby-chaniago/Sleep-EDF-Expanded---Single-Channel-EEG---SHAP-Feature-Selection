@@ -24,3 +24,4 @@ psutil==5.9.5
 ipywidgets==8.1.0 
 # Optional: For better logging 
 rich==13.5.2
+imblearn
