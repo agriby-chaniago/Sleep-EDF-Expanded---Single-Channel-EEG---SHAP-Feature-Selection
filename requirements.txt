@@ -1,27 +1,48 @@
-# Core ML and Data Science 
-numpy==1.24.3 
-pandas==2.0.3 
-scikit-learn==1.3.0 
-xgboost==2.0.3 # Signal Processing and EEG mne==1.5.1 scipy==1.11.1 antropy==0.1.6 PyWavelets==1.4.1 # Interpretability shap==0.43.0 # Statistical Analysis pingouin==0.5.3 statsmodels==0.14.0 # Visualization matplotlib==3.7.2 seaborn==0.12.2 # Utilities tqdm==4.66.1 joblib==1.3.2 psutil==5.9.5 ipywidgets==8.1.0 # Optional: For better logging rich==13.5.2
-xgboost==2.0.3 
-# Signal Processing and EEG 
-mne==1.5.1 
-scipy==1.11.1 
-antropy==0.1.6 
-PyWavelets==1.4.1 
-# Interpretability 
-shap==0.43.0 
+# =============================================================================
+# Sleep-EDF EEG Classification Project - Dependencies
+# =============================================================================
+# Install with: pip install -r requirements.txt
+# Python version: 3.8+
+# =============================================================================
+
+# Core ML and Data Science
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
+xgboost==2.0.3
+
+# Signal Processing and EEG
+mne==1.5.1
+scipy==1.11.1
+antropy==0.1.6
+PyWavelets==1.4.1
+
+# Interpretability
+shap==0.43.0
+
 # Statistical Analysis
-pingouin==0.5.3 
-statsmodels==0.14.0 
-# Visualization 
-matplotlib==3.7.2 
-seaborn==0.12.2 
-# Utilities 
-tqdm==4.66.1 
-joblib==1.3.2 
-psutil==5.9.5 
-ipywidgets==8.1.0 
-# Optional: For better logging 
+pingouin==0.5.3
+statsmodels==0.14.0
+
+# Visualization
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# Utilities
+tqdm==4.66.1
+joblib==1.3.2
+psutil==5.9.5
+ipywidgets==8.1.0
+
+# JIT Compilation
+numba>=0.57.0
+
+# Class Imbalance Handling
+imbalanced-learn>=0.11.0
+
+# Optional: For better logging
 rich==13.5.2
-imblearn
+
+# Jupyter Notebook Support
+jupyter>=1.0.0
+ipykernel>=6.25.0

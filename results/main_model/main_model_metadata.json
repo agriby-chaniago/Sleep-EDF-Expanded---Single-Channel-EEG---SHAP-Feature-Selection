@@ -1,0 +1,105 @@
+{
+  "experiment_box": "MAIN",
+  "dataset_name": "Sleep-EDF Expanded",
+  "timestamp": "2026-01-26T15:24:41.891176",
+  "random_seed": 42,
+  "n_folds": 5,
+  "total_subjects": 153,
+  "total_epochs": 414813,
+  "configuration": {
+    "use_multichannel": true,
+    "use_class_specific_shap": true,
+    "use_temporal": true,
+    "use_ensemble": true,
+    "use_smote": true,
+    "n1_weight_boost": 3.0,
+    "shap_threshold": 0.88,
+    "ensemble_models": [
+      "xgboost",
+      "svc"
+    ],
+    "ensemble_weights": [
+      0.7,
+      0.3
+    ]
+  },
+  "aggregated_metrics": {
+    "accuracy": {
+      "mean": 0.8648583849403849,
+      "std": 0.012397175144699103
+    },
+    "balanced_accuracy": {
+      "mean": 0.7800003205081808,
+      "std": 0.017359777346770612
+    },
+    "f1_macro": {
+      "mean": 0.7383033560621858,
+      "std": 0.014824055559187414
+    },
+    "f1_weighted": {
+      "mean": 0.8810025960027099,
+      "std": 0.010246550808189226
+    },
+    "cohen_kappa": {
+      "mean": 0.7404688291604031,
+      "std": 0.0215956707935888
+    }
+  },
+  "per_class_f1": {
+    "W": {
+      "mean": 0.9621225344717574,
+      "std": 0.006590381879376019
+    },
+    "N1": {
+      "mean": 0.431146499392025,
+      "std": 0.024255455419430805
+    },
+    "N2": {
+      "mean": 0.7495196777644287,
+      "std": 0.026708465954558454
+    },
+    "N3": {
+      "mean": 0.7972716130359405,
+      "std": 0.027478448338323132
+    },
+    "REM": {
+      "mean": 0.7514564556467774,
+      "std": 0.021999302331872788
+    }
+  },
+  "scope_statement": {
+    "baseline_only": true,
+    "cross_cohort_claims": false,
+    "cross_dataset_claims": false,
+    "deployment_ready": false,
+    "note": "This is a baseline performance evaluation on Sleep-EDF Expanded only. No cross-cohort or cross-dataset generalization claims are made."
+  },
+  "validation": {
+    "cv_strategy": "StratifiedGroupKFold",
+    "subject_wise_split": true,
+    "subject_overlap_verified": true,
+    "hard_assertion_enabled": true
+  },
+  "per_class_recall": {
+    "W": {
+      "mean": 0.9345684733260494,
+      "std": 0.013097601454578283
+    },
+    "N1": {
+      "mean": 0.7420362464712893,
+      "std": 0.020790053068807907
+    },
+    "N2": {
+      "mean": 0.6819133610298167,
+      "std": 0.03213822384535346
+    },
+    "N3": {
+      "mean": 0.8478081122291572,
+      "std": 0.05396682272871768
+    },
+    "REM": {
+      "mean": 0.6936754094845912,
+      "std": 0.01561617934585722
+    }
+  }
+}
